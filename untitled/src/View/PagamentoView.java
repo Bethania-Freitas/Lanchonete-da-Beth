@@ -21,8 +21,7 @@ public interface PagamentoView extends Views {
         System.out.println();
         System.out.println("Forma de pagamento selecionada: "+ Carrinho.getInstance().getFormaDePagamento());
         if (Carrinho.getInstance().getFormaDePagamento().equals(CREDITO) ){
-            System.out.println("Pagamento em " + Credito.getInstance().getParcelas()
-                    + "x de R$ " + String.format("%.2f",Credito.getInstance().getValorParcela()));
+            System.out.println(Credito.getInstance().toString());
         }
         System.out.println("Digite:");
         System.out.println("1 - para confirmar");

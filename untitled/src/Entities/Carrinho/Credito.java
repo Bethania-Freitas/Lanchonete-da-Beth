@@ -23,4 +23,11 @@ public class Credito {
     public void setParcelas(int parcelas) {
         this.parcelas = parcelas;
     }
+
+    public String toString(){
+        return "Pagamento em "
+                + parcelas
+                + " parcelas no valor de R$ "
+                + String.format("%.2f",valorParcela);
+    }
 }
