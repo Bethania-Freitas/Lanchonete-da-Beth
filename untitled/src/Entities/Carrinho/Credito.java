@@ -9,11 +9,8 @@ public class Credito {
     private int parcelas;
 
     public double getValorParcela() {
-        return valorParcela / parcelas;
-    }
-
-    public void setValorParcela(double valorParcela) {
-        this.valorParcela = valorParcela;
+        valorParcela = Carrinho.getInstance().getValorTotalDasCompras() / parcelas;
+        return valorParcela;
     }
 
     public int getParcelas() {
@@ -28,6 +25,6 @@ public class Credito {
         return "Pagamento em "
                 + parcelas
                 + " parcelas no valor de R$ "
-                + String.format("%.2f",valorParcela);
+                + String.format("%.2f",getValorParcela());
     }
 }

@@ -110,7 +110,7 @@ public interface PagamentoView extends Views {
         if (parcela > 3) {
             System.out.println("Opção inválida, tente novamente!");
         } else {
-            Credito.getInstance().setValorParcela(parcela);
+            Credito.getInstance().setParcelas(parcela);
         }
     }
 }
