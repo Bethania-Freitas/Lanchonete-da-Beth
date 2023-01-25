@@ -12,7 +12,6 @@ public interface MenuView extends Views {
 
     static final MenuView INSTANCE = new MenuView() {
     };
-
     public static MenuView getInstance() {
         return INSTANCE;
     }
@@ -39,7 +38,7 @@ public interface MenuView extends Views {
                         System.out.println("Não existem produtos no carrinho, adicione produtos antes de fechar o pedido");
                         menuInicial();
                     }
-                    PagamentoView.getInstance().fecharPedido();
+                    PagamentoView.getInstance().confirmarPedido();
                     break;
                 case 4:
                     if (Carrinho.getProdutoNoCarrinho().isEmpty()){

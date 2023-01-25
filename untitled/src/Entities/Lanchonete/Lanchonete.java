@@ -41,7 +41,8 @@ public class Lanchonete {
     }
 
     public void sair(){
-        System.out.println("Programa encerrado - Volte Sempre");
+        System.out.println("Programa encerrado");
+        System.exit(0);
     }
 
 

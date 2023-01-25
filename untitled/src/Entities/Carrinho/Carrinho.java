@@ -9,18 +9,17 @@ import java.util.List;
 import static Entities.Lanchonete.Lanchonete.produtos;
 
 public class Carrinho {
-    static final Carrinho INSTANCE = new Carrinho() {
-    };
+    static final Carrinho INSTANCE = new Carrinho() {};
     public static Carrinho getInstance() {
         return INSTANCE;
     }
+
     private static List<Produtos> produtoNoCarrinho = new ArrayList<>();
     private Double valorTotalDasCompras;
     private Enum FormaDePagamento;
 
-
-
     public Carrinho() {
+
         this.valorTotalDasCompras = 0.0;
     }
 
@@ -50,7 +49,6 @@ public class Carrinho {
         } else {
             produtoNoCarrinho.add(produto);
         }
-
     }
 
     public void removerProdutoNoCarrinho(Produtos produto){
@@ -59,7 +57,6 @@ public class Carrinho {
         } else {
             produtoNoCarrinho.remove(produto);
         }
-
     }
 
     public void mostrarProdutoNoCarrinho(){
@@ -78,5 +75,9 @@ public class Carrinho {
     }
 
 
-
+    public void limparCarrinho() {
+        for (Produtos produtos : produtos) {
+            removerProdutoNoCarrinho(produtos);
+        }
+    }
 }
