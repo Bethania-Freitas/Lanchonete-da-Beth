@@ -15,8 +15,12 @@ A proposta era programar usando POO e os conceitos de SOLID, para a contrução 
 ## Links
 
 - [Video](https://www.linkedin.com/posts/bethaniafreitas_java-transiaexaeto-transiaexaetodecarreira-activity-7024378629321109504-eWLG?utm_source=share&utm_medium=member_desktop)
+## Mapa do projeto
+
+![Imagem](https://github.com/Bethania-Freitas/Lanchonete-da-Beth/blob/main/Sem%20t%C3%ADtulo-2023-01-17-2043.png)
+
+
 ## Autores
 
 - [Bethania Freitas](https://github.com/Bethania-Freitas)
-
 
