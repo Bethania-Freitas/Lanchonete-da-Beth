@@ -50,21 +50,20 @@ public interface PagamentoView extends Views {
         } catch (Exception e) {
             System.out.println("Comportamento inesperado, o sistema vai precisar ser reiniciado");
         }
-
     }
 
     default void cancelarPedido(){
         System.out.println("Tudo bem, vamos limpar o seu carrinho, e reiniciar o programa!");
         Carrinho.getInstance().limparCarrinho();
         MenuView.getInstance().menuInicial();
-    };
+    }
 
     default void finalizarPedido(){
         System.out.println("Pedido finalizado com sucesso!");
         System.out.println("Aguarde até ser chamado pelo nome");
         System.out.println("OBRIGADA E VOLTE SEMPRE!");
         Lanchonete.getInstance().sair();
-    };
+    }
 
 
     default void selecionarFormaDePagamento(){

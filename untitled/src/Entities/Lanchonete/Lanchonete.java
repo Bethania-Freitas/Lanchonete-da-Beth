@@ -9,9 +9,7 @@ import java.util.List;
 
 public class Lanchonete {
     public static List<Produtos> produtos = new ArrayList<>();
-
     private static final Lanchonete INSTANCE = new Lanchonete();
-
     public static Lanchonete getInstance() {
         return INSTANCE;
     }
@@ -44,6 +42,4 @@ public class Lanchonete {
         System.out.println("Programa encerrado");
         System.exit(0);
     }
-
-
 }

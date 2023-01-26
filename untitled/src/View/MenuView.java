@@ -10,9 +10,8 @@ import static Entities.Lanchonete.Lanchonete.produtos;
 
 public interface MenuView extends Views {
 
-    static final MenuView INSTANCE = new MenuView() {
-    };
-    public static MenuView getInstance() {
+    MenuView INSTANCE = new MenuView() {};
+    static MenuView getInstance() {
         return INSTANCE;
     }
 
@@ -59,7 +58,7 @@ public interface MenuView extends Views {
         }
     }
 
-    public default void adicionarProduto(){
+    default void adicionarProduto(){
         System.out.println();
         System.out.print("Faça seu pedido pelo numero do produto: ");
         try {
@@ -75,7 +74,7 @@ public interface MenuView extends Views {
         Carrinho.getInstance().mostrarProdutoNoCarrinho();
     }
 
-    public default void removerProduto(){
+    default void removerProduto(){
         System.out.println();
         System.out.print("Digite o numero do produto que deseja remover: ");
         try {

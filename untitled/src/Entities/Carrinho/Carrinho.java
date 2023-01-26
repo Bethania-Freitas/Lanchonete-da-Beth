@@ -24,22 +24,25 @@ public class Carrinho {
     }
 
     public static List<Produtos> getProdutoNoCarrinho() {
+
         return produtoNoCarrinho;
     }
 
     public Double getValorTotalDasCompras() {
         valorTotalDasCompras = 0.0;
-        for(int i = 0; i < produtoNoCarrinho.size(); i++){
-            valorTotalDasCompras += produtos.get(i).getPrice();
+        for(int i = 0; i < produtoNoCarrinho.size();i++){
+            valorTotalDasCompras += produtoNoCarrinho.get(i).getPrice();
         }
         return valorTotalDasCompras;
     }
 
     public Enum getFormaDePagamento() {
+
         return FormaDePagamento;
     }
 
     public void setFormaDePagamento(Enum formaDePagamento) {
+
         FormaDePagamento = formaDePagamento;
     }
 
